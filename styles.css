@@ -1,0 +1,95 @@
+/* General Page Styling */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Techy font */
+    background-color: #0d0d0d; /* Dark techy background */
+    color: #00ffcc; /* Initial text color */
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.6;
+    animation: colorChange 10s infinite alternate;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #66ffcc;
+}
+
+/* Main Content */
+main article section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 4px solid #00ffcc;
+    background-color: rgba(0, 255, 204, 0.05);
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #00ffcc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #00ffcc;
+}
+
+/* Random Color Changing Effect */
+@keyframes colorChange {
+    0% { color: #00ffcc; }
+    20% { color: #ff00ff; }
+    40% { color: #ffff00; }
+    60% { color: #ff6600; }
+    80% { color: #00ccff; }
+    100% { color: #00ffcc; }
+}
+
+/* Links (if any) */
+a {
+    color: #ff66cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles Neon Glow & Random Color Animation */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    animation: neonGlow 8s infinite alternate;
+}
+
+/* Define neon color changes */
+@keyframes neonGlow {
+    0% { color: #00ffcc; text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc; }
+    20% { color: #ff00ff; text-shadow: 0 0 5px #da0dda, 0 0 10px #ff00ff, 0 0 20px #ff00ff; }
+    40% { color: #ffff00; text-shadow: 0 0 5px #ffff00, 0 0 10px #ecec5d, 0 0 20px #ffff00; }
+    60% { color: #ff6600; text-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 20px #ff6600; }
+    80% { color: #00ccff; text-shadow: 0 0 5px #00ccff, 0 0 10px #00ccff, 0 0 20px #00ccff; }
+    100% { color: #11e7bc; text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc; }
+}
+
+/* Random animation delay for each section to make them independent */
+main article section:nth-child(1) h2 { animation-delay: 0s; }
+main article section:nth-child(2) h2 { animation-delay: 1.5s; }
+main article section:nth-child(3) h2 { animation-delay: 3s; }
+main article section:nth-child(4) h2 { animation-delay: 4.5s; }
+main article section:nth-child(5) h2 { animation-delay: 6s; }
